@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex Adkins | Projects</title>
   <style>
+    .project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.project-tabs a {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-tabs a:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
     :root {
       color-scheme: dark;
       --bg: #0b1220;
@@ -70,7 +89,12 @@
   </header>
 
   <main>
+    <nav class="project-tabs" aria-label="Projects">
+      <a href="#drone-restoration">Drone restoration</a>
+      <!-- Add a link here when you have another project -->
+    </nav>
     <section>
+      <section id="drone-restoration">
       <p class="tag">Current project</p>
       <h2>Quadcopter restoration</h2>
       <p>
