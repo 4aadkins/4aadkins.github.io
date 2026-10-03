@@ -295,3 +295,34 @@ li {
 .test-log-note li {
   margin-bottom: 6px;
 }
+
+.inventory-table-wrap {
+  margin: 18px 0;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.inventory-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.inventory-table th {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.inventory-table tr:last-child td {
+  border-bottom: 0;
+}
