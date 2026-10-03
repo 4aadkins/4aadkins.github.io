@@ -250,3 +250,37 @@ li {
     gap: 4px;
   }
 }
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.button:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
