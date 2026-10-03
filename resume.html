@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View or download Alex Adkins’s engineering résumé.">
+  <meta name="theme-color" content="#0b1220">
   <title>Alex Adkins | Resume</title>
   <link rel="stylesheet" href="styles.css">
-  
 </head>
 <body>
-  <header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
     <p class="tag">Mechanical Engineering · UCF</p>
     <h1>Resume</h1>
-    <p>Education and selected engineering work.</p>
+    <p>Education and selected engineering experience.</p>
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
@@ -21,15 +24,51 @@
     </nav>
   </header>
 
-  <main>
-
-
-    <section>
-      <h2>Areas of interest</h2>
-      <p>Motorsport Engineering or Mechanical Engineering discipline. I would like to be involved in higher level companies that allow for me to expand my expertise in engineering as a whole.</p>
+  <main id="main-content">
+    <section aria-labelledby="interests-title">
+      <h2 id="interests-title">Areas of interest</h2>
+      <p>
+        I’m interested in motorsport and mechanical engineering, and I’m
+        looking for opportunities to develop practical design and testing experience.
+      </p>
     </section>
-<p><a href="AlexAdkins - EngineeringResume (1).pdf">View or download my resume (PDF)</a></p>
 
+    <section aria-labelledby="resume-pdf-title">
+      <h2 id="resume-pdf-title">Résumé PDF</h2>
+      <p>Open the PDF in a new tab or download a copy.</p>
+      <div class="button-row">
+        <a class="button"
+           href="AlexAdkins%20-%20EngineeringResume%20%281%29.pdf"
+           target="_blank"
+           rel="noopener">
+          Open résumé PDF
+        </a>
+        <a class="button button-secondary"
+           href="AlexAdkins%20-%20EngineeringResume%20%281%29.pdf"
+           download>
+          Download résumé PDF
+        </a>
+      </div>
+
+      <div class="resume-preview">
+        <iframe
+          src="AlexAdkins%20-%20EngineeringResume%20%281%29.pdf#view=FitH"
+          title="Alex Adkins résumé PDF preview"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Alex Adkins · UCF Mechanical Engineering</p>
+    <p>
+      <a href="https://github.com/4aadkins">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:alexanderadkins@hotmail.com">Contact</a>
+      <span aria-hidden="true">·</span>
+      <a href="#top">Back to top</a>
+    </p>
+  </footer>
 </body>
 </html>
