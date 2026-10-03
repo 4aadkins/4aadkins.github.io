@@ -222,6 +222,73 @@ li {
   margin-bottom: 22px;
 }
 
+
+.project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.project-card {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), transparent), var(--panel);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.project-card-image {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card-image img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.project-card-image:hover img {
+  transform: scale(1.03);
+}
+
+.project-card-copy {
+  padding: 20px;
+}
+
+.project-card-copy h3 {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+
+.project-card-copy h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-card-copy h3 a:hover {
+  color: var(--accent);
+}
+
+.project-card-copy > p:not(.tag):not(.button-row) {
+  color: var(--muted);
+}
+
+.project-card-copy .button-row {
+  margin: 16px 0 0;
+}
+
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
@@ -461,6 +528,16 @@ li {
   }
 
   .button:hover {
+    transform: none;
+  }
+
+  .project-card,
+  .project-card-image img {
+    transition: none;
+  }
+
+  .project-card:hover,
+  .project-card-image:hover img {
     transform: none;
   }
 }
