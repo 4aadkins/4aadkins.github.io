@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Engineering case study documenting Alex Adkins’s quadcopter restoration project.">
+  <meta name="description" content="Engineering projects by Alex Adkins, a mechanical engineering student at UCF.">
   <meta name="theme-color" content="#0b1220">
   <title>Alex Adkins | Projects</title>
   <link rel="stylesheet" href="styles.css">
@@ -14,7 +14,7 @@
   <header class="site-header" id="top">
     <p class="tag">Mechanical Engineering · UCF</p>
     <h1>Projects</h1>
-    <p>Projects I’m researching, building, and documenting.</p>
+    <p class="intro">Independent and team projects I’m researching, designing, building, and testing.</p>
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
@@ -25,233 +25,35 @@
   </header>
 
   <main id="main-content">
-    <nav class="project-tabs" aria-label="Projects">
-      <a href="#drone-restoration">Drone restoration</a>
-    </nav>
+    <section aria-labelledby="projects-title">
+      <p class="tag">Selected work</p>
+      <h2 id="projects-title">Project directory</h2>
+      <p>Each project page records the goals, decisions, work completed, and results as the project develops.</p>
 
-    <section id="drone-restoration" aria-labelledby="drone-title">
-      <p class="tag">Active project · Phase 1</p>
-      <h2 id="drone-title">Quadcopter restoration</h2>
-      <p>
-        I’m restoring an existing damaged quadcopter as a personal research
-        project. I’ll inspect the airframe, identify its parts, and document
-        repair and testing decisions as I go.
-      </p>
-      <p><strong>Current focus:</strong> Inspect the airframe and inventory its parts.</p>
-
-      <div class="project-gallery">
-        <figure>
-          <img
-            src="images/drone-before.JPG"
-            alt="The existing quadcopter frame before restoration"
-            loading="lazy"
-            decoding="async"
-          >
-          <figcaption>
-            <strong>Initial airframe</strong><br>
-            The drone before the parts inspection.
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="project-status" aria-labelledby="project-status-title">
-      <div class="status-heading">
-        <div>
-          <p class="tag">Project status</p>
-          <h2 id="project-status-title">Drone restoration</h2>
-        </div>
-        <span class="status-pill">Planning and inspection</span>
-      </div>
-
-      <p>
-        I’m documenting the restoration from the starting condition through
-        testing. I’ll update these milestones as the project progresses.
-      </p>
-
-      <ol class="milestones">
-        <li>
-          <span class="milestone-state">Recorded</span>
-          <div>
-            <strong>Capture the starting condition</strong>
-            <p>The starting photo is included in the project gallery.</p>
+      <div class="project-card-grid">
+        <article class="project-card">
+          <a class="project-card-image" href="drone-restoration.html" aria-label="Open the quadcopter restoration case study">
+            <img src="images/drone-before.JPG"
+                 alt="The quadcopter frame before restoration"
+                 loading="lazy"
+                 decoding="async">
+          </a>
+          <div class="project-card-copy">
+            <p class="tag">Independent project · In progress</p>
+            <h3><a href="drone-restoration.html">Quadcopter restoration</a></h3>
+            <p>I’m inspecting an existing damaged quadcopter, identifying its components, and documenting repair and testing decisions.</p>
+            <p><strong>Current focus:</strong> Inspect the airframe and inventory its parts.</p>
+            <p class="button-row">
+              <a class="button" href="drone-restoration.html">View project</a>
+            </p>
           </div>
-        </li>
-        <li class="current">
-          <span class="milestone-state">Current</span>
-          <div>
-            <strong>Inspect and inventory the parts</strong>
-            <p>Identify the frame, motors, electronics, battery, and any unknown parts.</p>
-          </div>
-        </li>
-        <li>
-          <span class="milestone-state">Planned</span>
-          <div>
-            <strong>Decide what needs repair or replacement</strong>
-            <p>Record the decisions and estimated costs before ordering parts.</p>
-          </div>
-        </li>
-        <li>
-          <span class="milestone-state">Planned</span>
-          <div>
-            <strong>Test the restored drone</strong>
-            <p>Document each test and its results as the build progresses.</p>
-          </div>
-        </li>
-      </ol>
-
-      <p class="next-step">
-        <strong>Next action:</strong> Make a parts inventory and note each item’s
-        label, condition, and whether you have identified it.
-      </p>
-    </section>
-
-    <section id="constraints" aria-labelledby="constraints-title">
-      <h2 id="constraints-title">Goal and constraints</h2>
-      <ul>
-        <li><strong>Goal:</strong> Restore the existing quadcopter and document the process.</li>
-        <li><strong>Starting point:</strong> A damaged drone frame with parts to identify.</li>
-        <li><strong>Resources:</strong> Personal research and a limited budget.</li>
-        <li><strong>Budget:</strong> To be set after the parts inventory.</li>
-        <li><strong>Size, payload, and flight time:</strong> To be determined after inspection.</li>
-      </ul>
-    </section>
-
-    <nav class="project-jump-links" aria-label="Project sections">
-      <strong>Jump to:</strong>
-      <a href="#inventory">Parts inventory</a>
-      <a href="#decisions">Design decisions</a>
-      <a href="#test-log">Test log</a>
-    </nav>
-
-    <section id="inventory" aria-labelledby="inventory-title">
-      <h2 id="inventory-title">Component inventory</h2>
-      <p>
-        I’ll record the label, condition, and planned action for each component.
-        If I can’t identify a part yet, I’ll mark it as unknown rather than guess.
-      </p>
-
-      <div class="inventory-table-wrap" tabindex="0" role="region" aria-label="Scrollable component inventory">
-        <table class="inventory-table">
-          <thead>
-            <tr>
-              <th scope="col">Component</th>
-              <th scope="col">Make / model</th>
-              <th scope="col">Condition</th>
-              <th scope="col">Planned action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Frame</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>Record damage and check whether it can be reused</td>
-            </tr>
-            <tr>
-              <td>Motors</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>Record labels and condition</td>
-            </tr>
-            <tr>
-              <td>Speed controllers (ESCs)</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>Record labels and condition</td>
-            </tr>
-            <tr>
-              <td>Flight controller</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>Record label and condition</td>
-            </tr>
-            <tr>
-              <td>Battery</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>Record label and condition</td>
-            </tr>
-            <tr>
-              <td>Propellers and radio equipment</td>
-              <td>To identify</td>
-              <td>To inspect</td>
-              <td>List each item and note anything missing</td>
-            </tr>
-          </tbody>
-        </table>
+        </article>
       </div>
     </section>
 
-    <section id="decisions" aria-labelledby="decisions-title">
-      <h2 id="decisions-title">Design decisions and open questions</h2>
-      <p>
-        I’ll record important choices here, along with the evidence behind them.
-      </p>
-
-      <div class="inventory-table-wrap" tabindex="0" role="region" aria-label="Scrollable design decisions">
-        <table class="inventory-table">
-          <thead>
-            <tr>
-              <th scope="col">Question or decision</th>
-              <th scope="col">Evidence needed</th>
-              <th scope="col">Status</th>
-              <th scope="col">Conclusion</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Which existing components can be reused?</td>
-              <td>Identify and inspect each component</td>
-              <td>Open</td>
-              <td>To be determined</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="restoration-plan" aria-labelledby="plan-title">
-      <h2 id="plan-title">Restoration plan</h2>
-      <ol>
-        <li>Inspect the airframe and record visible damage.</li>
-        <li>Identify the components and assess their condition.</li>
-        <li>Decide what can be reused, repaired, or replaced.</li>
-        <li>Document assembly and checks.</li>
-        <li>Record test results and update the project requirements.</li>
-      </ol>
-    </section>
-
-    <section id="build-log" aria-labelledby="build-log-title">
-      <h2 id="build-log-title">Build log</h2>
-      <article>
-        <h3>Project kickoff</h3>
-        <p class="tag">October 2, 2026</p>
-        <p>
-          I’m starting by inspecting the existing frame and identifying its
-          parts before setting final design targets.
-        </p>
-      </article>
-    </section>
-
-    <section id="test-log" aria-labelledby="test-log-title">
-      <h2 id="test-log-title">Test log</h2>
-      <p>
-        I’ll record each test here, including the setup, observations, and what
-        I plan to change next.
-      </p>
-
-      <div class="test-log-note">
-        <strong>For each test, record:</strong>
-        <ul>
-          <li>Date and test objective</li>
-          <li>Parts and setup used</li>
-          <li>What happened, including measurements if available</li>
-          <li>Result and next action</li>
-        </ul>
-      </div>
-
-      <p><strong>No test records posted yet.</strong></p>
+    <section aria-labelledby="approach-title">
+      <h2 id="approach-title">How I document projects</h2>
+      <p>Project pages include the objective, constraints, design decisions, progress notes, and measured results when available. I distinguish test results from goals and estimates.</p>
     </section>
   </main>
 
