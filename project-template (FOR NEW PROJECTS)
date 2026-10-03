@@ -1,0 +1,136 @@
+<!doctype html>
+<!--
+  Reusable project page starter for Alex Adkins's portfolio.
+  Copy this file to a new name such as frame-design.html, replace every
+  [bracketed prompt], add your project photos under images/, and link the new
+  page from the Projects page. Remove any sections that do not apply.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="[One-sentence description of this project].">
+  <meta name="theme-color" content="#0b1220">
+  <title>[Project name] | Alex Adkins</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <p class="tag">Mechanical Engineering · UCF</p>
+    <h1>[Project name]</h1>
+    <p class="intro">[Describe the project in one clear sentence.]</p>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <nav class="project-jump-links" aria-label="Project sections">
+      <strong>Jump to:</strong>
+      <a href="#overview">Overview</a>
+      <a href="#process">Process</a>
+      <a href="#progress">Progress log</a>
+      <a href="#results">Results</a>
+    </nav>
+
+    <section id="overview" aria-labelledby="overview-title">
+      <p class="tag">[Independent / team project] · [In progress / complete]</p>
+      <h2 id="overview-title">Project overview</h2>
+      <p>[What problem or opportunity led to this project?]</p>
+      <p>[What were you trying to make, repair, study, or improve?]</p>
+      <p><strong>Current status:</strong> [State what is complete and what is next.]</p>
+      <p><strong>My role:</strong> [Describe your own contribution accurately.]</p>
+    </section>
+
+    <section id="snapshot" aria-labelledby="snapshot-title">
+      <h2 id="snapshot-title">Project snapshot</h2>
+      <ul>
+        <li><strong>Dates:</strong> [Month Year–present or completion date]</li>
+        <li><strong>Team:</strong> [Solo or team name and your role]</li>
+        <li><strong>Tools:</strong> [Software, equipment, or fabrication methods used]</li>
+        <li><strong>Constraints:</strong> [Budget, materials, size, schedule, or other limits]</li>
+      </ul>
+    </section>
+
+    <section id="process" aria-labelledby="process-title">
+      <h2 id="process-title">Design process</h2>
+      <article>
+        <h3>Goal and requirements</h3>
+        <p>[Describe the goal and the requirements you used to guide the work.]</p>
+      </article>
+      <article>
+        <h3>Key design decision</h3>
+        <p><strong>Decision:</strong> [What did you decide?]</p>
+        <p><strong>Reasoning:</strong> [What evidence, calculation, or constraint informed it?]</p>
+        <p><strong>Result:</strong> [What happened after the decision? If not tested yet, say so.]</p>
+      </article>
+      <!-- Duplicate the decision article when another important decision is made. -->
+    </section>
+
+    <section id="evidence" aria-labelledby="evidence-title">
+      <h2 id="evidence-title">Photos and design files</h2>
+      <p>Add photos, CAD screenshots, drawings, or diagrams that help explain the work.</p>
+      <div class="project-gallery">
+        <!--
+        Copy this figure for each image. Put the image in the images/ folder and
+        replace both the file name and the alt text with an accurate description.
+        <figure>
+          <img src="images/[photo-file-name].jpg"
+               alt="[Brief description of what the image shows]"
+               loading="lazy" decoding="async">
+          <figcaption>
+            <strong>[Short caption]</strong><br>
+            [What this image documents.] 
+          </figcaption>
+        </figure>
+        -->
+      </div>
+      <!-- Add links to drawings, calculations, or reports here when available. -->
+    </section>
+
+    <section id="progress" aria-labelledby="progress-title">
+      <h2 id="progress-title">Progress log</h2>
+      <!-- Copy the article below for each work session or project milestone. -->
+      <article>
+        <h3>[Short update title]</h3>
+        <p class="tag">[Month Day, Year]</p>
+        <p><strong>Goal:</strong> [What you planned to do.]</p>
+        <p><strong>Work completed:</strong> [What you actually did.]</p>
+        <p><strong>Observation or result:</strong> [What you measured, found, or learned.]</p>
+        <p><strong>Next step:</strong> [The next specific action.]</p>
+      </article>
+    </section>
+
+    <section id="results" aria-labelledby="results-title">
+      <h2 id="results-title">Results and next steps</h2>
+      <article>
+        <h3>Measured results</h3>
+        <p>[Record actual results here. Label estimates and goals separately from measurements.]</p>
+      </article>
+      <p class="next-step"><strong>Next milestone:</strong> [State the next measurable project milestone.]</p>
+    </section>
+
+    <section id="reflection" aria-labelledby="reflection-title">
+      <h2 id="reflection-title">What I learned</h2>
+      <p>[Summarize what you learned and what you would change in a future iteration.]</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Alex Adkins · UCF Mechanical Engineering</p>
+    <p>
+      <a href="https://github.com/4aadkins">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:alexanderadkins@hotmail.com">Contact</a>
+      <span aria-hidden="true">·</span>
+      <a href="#top">Back to top</a>
+    </p>
+  </footer>
+</body>
+</html>
