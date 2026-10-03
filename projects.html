@@ -22,6 +22,7 @@
 
 .project-tabs a:hover {
   background: var(--accent);
+  background-attachment: fixed, scroll;
   color: var(--bg);
 }
     :root {
@@ -72,6 +73,11 @@
       body { padding: 22px 14px; }
       header, section { padding: 24px 20px; }
     }
+    @media (max-width: 600px), (prefers-reduced-motion: reduce) {
+  body {
+    background-attachment: scroll;
+  }
+}
   </style>
 </head>
 <body>
