@@ -326,3 +326,31 @@ li {
 .inventory-table tr:last-child td {
   border-bottom: 0;
 }
+
+<section id="decisions">
+  <h2>Design decisions and open questions</h2>
+  <p>
+    I’ll record important choices here, along with the evidence behind them.
+  </p>
+
+  <div class="inventory-table-wrap">
+    <table class="inventory-table">
+      <thead>
+        <tr>
+          <th scope="col">Question or decision</th>
+          <th scope="col">Evidence needed</th>
+          <th scope="col">Status</th>
+          <th scope="col">Conclusion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Which existing components can be reused?</td>
+          <td>Identify and inspect each component</td>
+          <td>Open</td>
+          <td>To be determined</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
