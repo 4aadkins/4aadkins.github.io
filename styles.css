@@ -1,0 +1,147 @@
+:root {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --panel: #142238;
+  --text: #edf3fb;
+  --muted: #a6b2c5;
+  --accent: #55e2c0;
+  --border: rgba(173, 190, 215, 0.17);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 22px;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(85, 226, 192, 0.13), transparent 38%),
+    var(--bg);
+  background-attachment: fixed, scroll;
+  color: var(--text);
+  font: 17px/1.7 system-ui, sans-serif;
+}
+
+header,
+section {
+  margin-bottom: 22px;
+  padding: 30px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.045), transparent), var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+header {
+  padding: 40px 36px;
+}
+
+.tag {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(2.6rem, 8vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin-bottom: 4px;
+}
+
+article {
+  margin: 16px 0;
+  padding: 16px 20px;
+  border-left: 2px solid var(--accent);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 0 10px 10px 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+strong {
+  color: var(--accent);
+}
+
+li {
+  padding-left: 4px;
+}
+
+.site-nav,
+.project-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.project-tabs {
+  margin-bottom: 22px;
+}
+
+.site-nav a,
+.project-tabs a {
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"],
+.project-tabs a:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.project-photo {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 18px 0;
+  border-radius: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 22px 14px;
+    background-attachment: scroll;
+  }
+
+  header,
+  section {
+    padding: 24px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+}
