@@ -22,6 +22,7 @@
       margin: 0 auto;
       padding: 48px 22px;
       background: radial-gradient(ellipse at 15% 0%, rgba(85,226,192,.13), transparent 38%), var(--bg);
+      background-attachment: fixed, scroll;
       color: var(--text);
       font: 17px/1.7 system-ui, sans-serif;
     }
@@ -52,6 +53,11 @@
       body { padding: 22px 14px; }
       header, section { padding: 24px 20px; }
     }
+    @media (max-width: 600px), (prefers-reduced-motion: reduce) {
+  body {
+    background-attachment: scroll;
+  }
+}
   </style>
 </head>
 <body>
