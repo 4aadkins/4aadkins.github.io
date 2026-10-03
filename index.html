@@ -3,31 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alex Adkins | Engineering Projects</title>
+  <meta name="description" content="Alex Adkins, a UCF mechanical engineering student, shares engineering projects, experience, and a résumé.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Alex Adkins | Mechanical Engineering Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  
 </head>
 <body>
-  <header>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
     <p class="tag">Mechanical Engineering · UCF</p>
     <h1>Alex Adkins</h1>
-    <p>I am a Freshmen in Mechanical Engineering at UCF in the Burnett Honors College. I am involved in ASME and music clubs. Currently, I am working towards creating a drone from scratch, starting with the boken body frame.</p>
-    <h2>Contact Info</h2>
-    <p> Email: alexanderadkins@hotmail.com</p>
-    
+    <p class="intro">
+      I’m a first-year mechanical engineering student at the University of
+      Central Florida and a member of the Burnett Honors College. I participate
+      in ASME and campus music clubs. My current independent project is
+      restoring a damaged quadcopter and documenting the engineering process.
+    </p>
+
     <div class="button-row">
-  <a class="button" href="resume.html">View résumé</a>
-  <a class="button button-secondary"
-     href="AlexAdkins - EngineeringResume (1).pdf"
-     download>
-    Download résumé PDF
-  </a>
-  <a class="button button-secondary"
-     href="mailto:alexanderadkins@hotmail.com">
-    Email me
-  </a>
-</div>
-    
+      <a class="button" href="projects.html">Explore my projects</a>
+      <a class="button button-secondary"
+         href="AlexAdkins%20-%20EngineeringResume%20%281%29.pdf"
+         download>Download résumé</a>
+      <a class="button button-secondary" href="mailto:alexanderadkins@hotmail.com">Email me</a>
+    </div>
+
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html" aria-current="page">Home</a>
       <a href="projects.html">Projects</a>
@@ -36,31 +37,57 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Current project: Drone restoration</h2>
-      <p>
-        I’m restoring an existing damaged quadcopter. I’ll document the
-        inspection, parts inventory, repair decisions, and test results.
-      </p>
-      <p><strong>Current step:</strong> Inspect the airframe and identify its parts.</p>
+  <main id="main-content">
+    <section class="featured-project" aria-labelledby="featured-project-title">
+      <img
+        src="images/drone-before.JPG"
+        alt="The damaged quadcopter before restoration"
+        loading="lazy"
+        decoding="async"
+      >
+      <div class="featured-project-copy">
+        <p class="tag">Featured project · In progress</p>
+        <h2 id="featured-project-title">Quadcopter restoration</h2>
+        <p>
+          I’m inspecting an existing quadcopter, identifying its components,
+          and recording repair decisions and test results as the work progresses.
+        </p>
+        <a class="text-link" href="projects.html#drone-restoration">View the project case study →</a>
+      </div>
     </section>
 
-
-    <section>
-      <h2>Build log</h2>
+    <section aria-labelledby="build-log-title">
+      <h2 id="build-log-title">Build log</h2>
       <article>
         <h3>Website beginning</h3>
         <p class="tag">October 2, 2026</p>
-        <p>I’m creating this site to document the drone restoration and share what I learn.</p>
+        <p>I created this site to document the drone restoration and share what I learn.</p>
       </article>
       <article>
         <h3>Project kickoff</h3>
         <p class="tag">October 2, 2026</p>
-        <p>I’m starting by inspecting the existing frame and identifying its parts.</p>
+        <p>I started by documenting the existing frame and planning a parts inspection.</p>
       </article>
     </section>
 
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>
+        I’m interested in mechanical design, hands-on engineering, and learning
+        through building and testing.
+      </p>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Alex Adkins · UCF Mechanical Engineering</p>
+    <p>
+      <a href="https://github.com/4aadkins">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:alexanderadkins@hotmail.com">Contact</a>
+      <span aria-hidden="true">·</span>
+      <a href="#top">Back to top</a>
+    </p>
+  </footer>
 </body>
 </html>
