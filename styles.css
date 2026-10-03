@@ -35,8 +35,7 @@ img {
 }
 
 .site-header,
-main > section,
-main > nav {
+main > section {
   margin-bottom: 22px;
   padding: 30px;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.045), transparent), var(--panel);
@@ -322,6 +321,7 @@ li {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+  margin: 0 0 22px;
 }
 
 .project-jump-links a {
@@ -373,11 +373,12 @@ li {
 }
 
 .resume-preview {
-  margin-top: 22px;
+  max-width: 860px;
+  margin: 22px auto 0;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: #fff;
+  background: var(--bg);
 }
 
 .resume-preview iframe {
@@ -417,8 +418,7 @@ li {
   }
 
   .site-header,
-  main > section,
-  main > nav {
+  main > section {
     padding: 24px 20px;
   }
 
